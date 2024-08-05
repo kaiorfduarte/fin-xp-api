@@ -1,0 +1,11 @@
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\bin\Debug\net8.0\FinXp.Ioc.deps.json
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\bin\Debug\net8.0\FinXp.Ioc.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\bin\Debug\net8.0\FinXp.Ioc.pdb
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\FinXp.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\FinXp.Ioc.AssemblyInfoInputs.cache
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\FinXp.Ioc.AssemblyInfo.cs
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\FinXp.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\FinXp.Ioc.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\refint\FinXp.Ioc.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\FinXp.Ioc.pdb
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Ioc\obj\Debug\net8.0\ref\FinXp.Ioc.dll

@@ -1,0 +1,15 @@
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\bin\Debug\net8.0\FinXp.Infra.Data.deps.json
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\bin\Debug\net8.0\FinXp.Infra.Data.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\bin\Debug\net8.0\FinXp.Infra.Data.pdb
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\bin\Debug\net8.0\FinXp.Domain.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\bin\Debug\net8.0\FinXp.Domain.pdb
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.Infra.Data.AssemblyInfo.cs
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.In.08D2BE33.Up2Date
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.Infra.Data.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\refint\FinXp.Infra.Data.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\FinXp.Infra.Data.pdb
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Infra.Data\obj\Debug\net8.0\ref\FinXp.Infra.Data.dll

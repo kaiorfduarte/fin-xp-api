@@ -1,0 +1,11 @@
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\bin\Debug\net8.0\FinXp.Domain.deps.json
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\bin\Debug\net8.0\FinXp.Domain.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\bin\Debug\net8.0\FinXp.Domain.pdb
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\FinXp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\FinXp.Domain.AssemblyInfoInputs.cache
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\FinXp.Domain.AssemblyInfo.cs
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\FinXp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\FinXp.Domain.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\refint\FinXp.Domain.dll
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\FinXp.Domain.pdb
+C:\Users\kaiN\Documents\Project\FinXp.Api\FinXp.Domain\obj\Debug\net8.0\ref\FinXp.Domain.dll

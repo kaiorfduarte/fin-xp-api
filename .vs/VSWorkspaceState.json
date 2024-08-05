@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FinXp.Api\\Controllers",
+    "\\FinXp.Api\\Profiles",
+    "\\FinXp.Application\\Services",
+    "\\FinXp.Domain\\Interfaces",
+    "\\FinXp.Domain\\Interfaces\\Repository",
+    "\\FinXp.Domain\\Interfaces\\Service",
+    "\\FinXp.Domain\\Model",
+    "\\FinXp.Domain\\Model\\Request",
+    "\\FinXp.Infra.Data\\Repository"
+  ],
+  "SelectedNode": "\\FinXp.Api.sln",
+  "PreviewInSolutionExplorer": false
+}

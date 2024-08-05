@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "p2UUKS7khLyqxTEY59VaziFPtbZuDChh10zi0aCgXw4=",
+  "Source": "FinXp.Api",
+  "BasePath": "_content/FinXp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,44 @@
+version: '3.9'
+services:
+    db:
+        image: postgres:16
+        container_name: xp-db
+        hostname: xp-db
+        command: 'postgres -c max_connections=1000 -c shared_buffers=128MB -c synchronous_commit=off -c fsync=off -c full_page_writes=off'
+        environment:
+          - POSTGRES_PASSWORD=pwfinxp
+          - POSTGRES_USER=admin
+          - POSTGRES_DB=dbxp
+        ports:
+          - "5432:5432"
+        volumes:
+          - ./script.sql:/docker-entrypoint-initdb.d/script.sql:ro
+        restart: always
+        deploy:
+          resources:
+            limits:
+              cpus: '0.5'
+              memory: '500MB'
+        networks:
+          - app-network
+    api:
+        build: .
+        container_name: xpapi
+        hostname: xpapi
+        restart: always
+        environment:
+          - ENVIRONMENT=Production
+        ports:
+          - "8080:8080"
+        depends_on:
+          - db
+        deploy:
+          resources:
+            limits:
+              cpus: '0.5'
+              memory: '500MB'
+        networks:
+          - app-network
+
+networks:
+  app-network:
