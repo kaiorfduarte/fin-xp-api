@@ -6,7 +6,7 @@ namespace FinXp.Api.Profiles
 {
     public class NegotiationProfile : Profile
     {
-        public NegotiationProfile() 
+        public NegotiationProfile()
         {
             CreateMap<NegotiationRequest, NegotiationProduct>()
                 .ForMember(dest => dest.ProductId, src => src.MapFrom(x => x.ProductId))

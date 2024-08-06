@@ -1,4 +1,5 @@
 ﻿using FinXp.Domain.Enum;
+using FinXp.Domain.Exceptions;
 using FinXp.Domain.Interfaces.Repository;
 using FinXp.Domain.Interfaces.Service;
 using FinXp.Domain.Model;
@@ -21,9 +22,10 @@ public class NegotiationService(INegotiationRepository negotiationRepository, IL
                 return await negotiationRepository.SaveSellNegotiationDataAsync(negotiationProduction);
             }
         }
-		catch (Exception ex)
+		catch (NegotiationException ex)
 		{
             logger.LogError("Ocorre um erro para salvar a negociacao {Message}", ex.Message);
+
             return ex;
         }
     }

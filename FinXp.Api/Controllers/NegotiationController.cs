@@ -20,12 +20,13 @@ public class NegotiationController(
 
         var result = await negotiateService.SaveNegotiationAsync(negotiation);
 
-        if (result.IsSuccess && result.Data)
+        if (result.IsSuccess)
         {
-            return Created();
-        }
-        else if(result.Data is false)
-        {
+            if (result.Data)
+            {
+                return Created();
+            }
+
             return UnprocessableEntity();
         }
         else
