@@ -23,8 +23,9 @@ CONSTRAINT fk_clientproduct_productId FOREIGN KEY(ProductId) REFERENCES Product(
 
 CREATE TABLE OperationType(OperationTypeId INTEGER NOT NULL, Name VARCHAR(10));
 
-CREATE TABLE Negotiation(NegotiationId SERIAL PRIMARY KEY, ClientProductId INTEGER NOT NULL, Quantity INTEGER NOT NULL, OperationType INTEGER NOT NULL, RegisterDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-CONSTRAINT fk_negotiation_clientproductid FOREIGN KEY(ClientProductId) REFERENCES ClientProduct(ClientProductId));
+CREATE TABLE Negotiation(NegotiationId SERIAL PRIMARY KEY, ClientProductId INTEGER NOT NULL, Quantity INTEGER NOT NULL, OperationTypeId INTEGER NOT NULL, RegisterDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+CONSTRAINT fk_negotiation_clientproductid FOREIGN KEY(ClientProductId) REFERENCES ClientProduct(ClientProductId),
+CONSTRAINT fk_negotiation_operationtypeid FOREIGN KEY(OperationTypeId) REFERENCES OperationType(OperationTypeId));
 
 CREATE INDEX idx_client_clientid ON Client(ClientId);
 CREATE INDEX idx_product_productid ON Product(ProductId);
