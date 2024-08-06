@@ -20,11 +20,11 @@ public class NegotiationController(
 
         var result = await negotiateService.SaveNegotiationAsync(negotiation);
 
-        if (result.IsSuccess)
+        if (result.Success)
         {
             if (result.Data)
             {
-                return Created();
+                return StatusCode(StatusCodes.Status201Created);
             }
 
             return UnprocessableEntity();

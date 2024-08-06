@@ -14,10 +14,10 @@ export const options = {
 
 export default function () {
     let data = {
-        ProductId: Math.floor(Math.random() * 5) + 1, //gera de 1 a 5 os produtos
-        ClientId: Math.floor(Math.random() * 5) + 1, //gera de 1 a 5 os clientes
-        Quantity: Math.floor(Math.random() * 5) + 1, //gera de 1 a 5 as quantidades
-        OperationTypeId: Math.floor(Math.random() * 2) + 1 //1 para compra e 2 para venda
+        ProductId: Math.floor(Math.random() * 5) + 1, 
+        ClientId: Math.floor(Math.random() * 5) + 1, 
+        Quantity: Math.floor(Math.random() * 5) + 1, 
+        OperationTypeId: Math.floor(Math.random() * 2) + 1 
     };
 
     const response = http.post('http://localhost:8080/Negotiation/Save', JSON.stringify(data), {
@@ -25,7 +25,6 @@ export default function () {
     });
 
     check(response, {
-        'save is status 204': (r) => r.status === 204,
         'save is status 201': (r) => r.status === 201,
         'save is status 422': (r) => r.status === 422,
         'save is status 500': (r) => r.status === 500,

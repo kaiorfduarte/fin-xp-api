@@ -1,10 +1,11 @@
 ﻿using FinXp.Domain.Model;
+using FinXp.Domain.Util;
 
 namespace FinXp.Domain.Interfaces.Service;
 
 public interface IProductService
 {
-    Task<ServiceResult<IList<Product>>> GetProductListAsync();
+    Task<ServiceResult<IEnumerable<Product>>> GetProductListAsync();
 
-    Task<ServiceResult<IList<ClientProduct>>> GetClientProductAsync(int clientId);
+    Task<ServiceResult<IEnumerable<ClientProduct>>> GetClientProductAsync(int clientId);
 }

@@ -12,18 +12,18 @@ public class ProductController(IProductService productService,
 {
     [HttpGet]
     [Route("GetProductList")]
-    public async Task<ActionResult<List<ProductResponse>>> GetProductList()
+    public async Task<IActionResult> GetProductList()
     {
         var resultProductList = await productService.GetProductListAsync();
 
-        if (resultProductList.IsSuccess)
+        if (resultProductList.Success)
         {
-            if(resultProductList.Data.Count == 0)
+            if(resultProductList.Data.Count() == 0)
             {
                 return NoContent();
             }
 
-            var response = mapper.Map<List<ProductResponse>>(resultProductList.Data);
+            var response = mapper.Map<IList<ProductResponse>>(resultProductList.Data);
 
             return Ok(response);
         }
@@ -35,18 +35,18 @@ public class ProductController(IProductService productService,
 
     [HttpGet]
     [Route("GetClientProductList")]
-    public async Task<ActionResult<List<ClientProductResponse>>> GetClientProductList(int clientId)
+    public async Task<IActionResult> GetClientProductList(int clientId)
     {
         var resultClientProductList = await productService.GetClientProductAsync(clientId);
 
-        if (resultClientProductList.IsSuccess)
+        if (resultClientProductList.Success)
         {
-            if (resultClientProductList.Data.Count == 0)
+            if (resultClientProductList.Data.Count() == 0)
             {
                 return NoContent();
             }
 
-            var response = mapper.Map<List<ClientProductResponse>>(resultClientProductList.Data);
+            var response = mapper.Map<IList<ClientProductResponse>>(resultClientProductList.Data);
 
             return Ok(response);
         }

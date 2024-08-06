@@ -1,4 +1,5 @@
 ﻿using FinXp.Domain.Model;
+using FinXp.Domain.Util;
 
 namespace FinXp.Domain.Interfaces.Service;
 
