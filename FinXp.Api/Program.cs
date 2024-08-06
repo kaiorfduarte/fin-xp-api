@@ -8,8 +8,6 @@ builder.Services.AddControllers();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddInfra(builder.Configuration);
-
 builder.Services.AddServices(builder.Configuration);
 
 var app = builder.Build();
