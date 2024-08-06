@@ -12,7 +12,9 @@ services:
         ports:
           - "5432:5432"
         volumes:
-          - ./script.sql:/docker-entrypoint-initdb.d/script.sql:ro
+          - ./Scripts/03_Execute.sql:/docker-entrypoint-initdb.d/03_Execute.sql:ro   
+          - ./Scripts/02_Functions.sql:/docker-entrypoint-initdb.d/02_Functions.sql:ro
+          - ./Scripts/01_Tables.sql:/docker-entrypoint-initdb.d/01_Tables.sql:ro
         restart: always
         deploy:
           resources:
