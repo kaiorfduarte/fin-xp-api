@@ -18,7 +18,6 @@ public class ProductProfile : Profile
         CreateMap<ClientProduct, ClientProductResponse>()
                     .ForMember(dest => dest.ProductId, src => src.MapFrom(x => x.ProductId))
                     .ForMember(dest => dest.Name, src => src.MapFrom(x => x.Name))
-                    .ForMember(dest => dest.Quantity, src => src.MapFrom(x => x.Quantity))
-                    .ForMember(dest => dest.RegisterDate, src => src.MapFrom(x => x.RegisterDate));
+                    .ForMember(dest => dest.Quantity, src => src.MapFrom(x => x.Quantity));
     }
 }

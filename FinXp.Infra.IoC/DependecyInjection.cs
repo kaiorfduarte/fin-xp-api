@@ -14,6 +14,8 @@ public static class DependecyInjection
     {
         service.AddTransient<INegotiationService, NegotiationService>();
         service.AddTransient<INegotiationRepository, NegotiationRepository>();
+        service.AddTransient<IProductService, ProductService>();
+        service.AddTransient<IProductRepository, ProductRepository>();
         service.AddScoped<ISqlConnection, SqlConnection>();
         return service;
     }

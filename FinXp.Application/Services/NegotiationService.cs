@@ -7,7 +7,8 @@ using Microsoft.Extensions.Logging;
 
 namespace FinXp.Application.Services;
 
-public class NegotiationService(INegotiationRepository negotiationRepository, ILogger<NegotiationService> logger) : INegotiationService
+public class NegotiationService(INegotiationRepository negotiationRepository,
+    ILogger<NegotiationService> logger) : INegotiationService
 {
     public async Task<ServiceResult<bool>> SaveNegotiationAsync(NegotiationProduct negotiationProduction)
     {

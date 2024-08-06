@@ -35,7 +35,7 @@ public class ProductController(IProductService productService,
 
     [HttpGet]
     [Route("GetClientProductList")]
-    public async Task<ActionResult<List<ProductResponse>>> GetClientProductList(int clientId)
+    public async Task<ActionResult<List<ClientProductResponse>>> GetClientProductList(int clientId)
     {
         var resultClientProductList = await productService.GetClientProductAsync(clientId);
 
@@ -46,7 +46,7 @@ public class ProductController(IProductService productService,
                 return NoContent();
             }
 
-            var response = mapper.Map<List<ProductResponse>>(resultClientProductList.Data);
+            var response = mapper.Map<List<ClientProductResponse>>(resultClientProductList.Data);
 
             return Ok(response);
         }

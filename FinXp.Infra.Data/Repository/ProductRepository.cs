@@ -22,9 +22,9 @@ public class ProductRepository(ISqlConnection _sqlConnection) : IProductReposito
         await using NpgsqlConnection connection = _sqlConnection.CreateConnection();
 
         return await connection.QueryAsync<ClientProduct>(
-            "SELECT P.ProductId, P.Name, CP.Quantity, CP.RegisterDate " +
-            "FROM ClientProduct CP" +
-            "INNER JOIN Product P ON P.ProductId = CP.ProductId" +
+            "SELECT P.ProductId, P.Name, CP.Quantity " +
+            "FROM ClientProduct CP " +
+            "INNER JOIN Product P ON P.ProductId = CP.ProductId " +
             $"WHERE CP.ClientId = {clientId};");
     }
 }

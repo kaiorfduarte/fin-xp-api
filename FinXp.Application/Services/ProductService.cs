@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 namespace FinXp.Application.Services;
 
 public class ProductService(IProductRepository productRepository,
-    ILogger logger) : IProductService
+    ILogger<ProductService> logger) : IProductService
 {
     public async Task<ServiceResult<IList<ClientProduct>>> GetClientProductAsync(int clientId)
     {
