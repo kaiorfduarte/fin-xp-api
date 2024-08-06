@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using FinXp.Domain.Interfaces.Service;
-using FinXp.Domain.Model;
 using FinXp.Domain.Model.Response;
 using Microsoft.AspNetCore.Mvc;
 
