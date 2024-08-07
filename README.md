@@ -5,7 +5,9 @@
  - Ter o gitbash;
  - Instalar o k6;
      - Instacao windows:
+       ```
          - winget install k6 --source winget
+       ```
          - https://dl.k6.io/msi/k6-latest-amd64.msi
      - Instalacao linux:
        ```
