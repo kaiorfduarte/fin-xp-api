@@ -5,10 +5,11 @@ const only422Callback = http.expectedStatuses(422);
 
 export const options = {
     vus: 5,
-    duration: '120s',
+    duration: '60s',
     thresholds: {
         'http_req_duration{type:NegotiationSave}': ['p(99)<100'], 
         'http_req_duration{type:GetClientProductList}': ['p(99)<100'],
+        'http_req_duration{type:GetProductList}': ['p(99)<100'],
     },
 };
 
@@ -39,5 +40,15 @@ export default function () {
         'GetClientProductList is status 200': (r) => r.status === 200,
         'GetClientProductList is status 204': (r) => r.status === 204,
         'GetClientProductList is status 500': (r) => r.status === 500,
+    });
+
+    const responseGetClient = http.get(`http://localhost:8080/Product/GetProductList`, {
+        tags: { type: 'GetProductList' },
+    });
+
+    check(responseGetClient, {
+        'GetProductList is status 200': (r) => r.status === 200,
+        'GetProductList is status 204': (r) => r.status === 204,
+        'GetProductList is status 500': (r) => r.status === 500,
     });
 }
