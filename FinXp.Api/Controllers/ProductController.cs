@@ -23,7 +23,7 @@ public class ProductController(IProductService productService,
                 return NoContent();
             }
 
-            var response = mapper.Map<IList<ProductResponse>>(resultProductList.Data);
+            var response = mapper.Map<IEnumerable<ProductResponse>>(resultProductList.Data);
 
             return Ok(response);
         }
@@ -46,7 +46,7 @@ public class ProductController(IProductService productService,
                 return NoContent();
             }
 
-            var response = mapper.Map<IList<ClientProductResponse>>(resultClientProductList.Data);
+            var response = mapper.Map<IEnumerable<ClientProductResponse>>(resultClientProductList.Data);
 
             return Ok(response);
         }
