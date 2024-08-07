@@ -25,9 +25,9 @@ export default function () {
     });
 
     check(response, {
-        'save is status 201': (r) => r.status === 201,
-        'save is status 422': (r) => r.status === 422,
-        'save is status 500': (r) => r.status === 500,
+        'NegotiationSave is status 201': (r) => r.status === 201,
+        'NegotiationSave is status 422': (r) => r.status === 422,
+        'NegotiationSave is status 500': (r) => r.status === 500,
     });
 
     const clientId = Math.floor(Math.random() * 10) + 1;
@@ -36,8 +36,8 @@ export default function () {
     });
 
     check(responseGet, {
-        'list is status 200': (r) => r.status === 200,
-        'list is status 204': (r) => r.status === 204,
-        'list is status 500': (r) => r.status === 500,
+        'GetClientProductList is status 200': (r) => r.status === 200,
+        'GetClientProductList is status 204': (r) => r.status === 204,
+        'GetClientProductList is status 500': (r) => r.status === 500,
     });
 }
