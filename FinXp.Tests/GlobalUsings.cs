@@ -1,0 +1,9 @@
+global using FinXp.Application.Services;
+global using FinXp.Domain.Interfaces.Repository;
+global using Microsoft.Extensions.Logging;
+global using FinXp.Domain.Interfaces.Service;
+global using Moq;
+global using AutoMapper;
+global using FinXp.Api.Controllers;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;

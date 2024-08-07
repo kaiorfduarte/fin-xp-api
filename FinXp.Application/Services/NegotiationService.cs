@@ -28,7 +28,7 @@ public class NegotiationService(INegotiationRepository negotiationRepository,
 
             return result;
         }
-		catch (NegotiationException ex)
+		catch (Exception ex)
 		{
             logger.LogError("Ocorre um erro para salvar a negociacao {Message}", ex.Message);
 
