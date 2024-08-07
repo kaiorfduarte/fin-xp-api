@@ -5,7 +5,7 @@ const only422Callback = http.expectedStatuses(422);
 
 export const options = {
     vus: 1,
-    duration: '10s',
+    duration: '60s',
     thresholds: {
         'http_req_duration{type:NegotiationSave}': ['p(99)<100'], 
         'http_req_duration{type:GetClientProductList}': ['p(99)<100'],
@@ -14,8 +14,8 @@ export const options = {
 
 export default function () {
     let data = {
-        ProductId: Math.floor(Math.random() * 5) + 1, 
-        ClientId: Math.floor(Math.random() * 5) + 1, 
+        ProductId: Math.floor(Math.random() * 10) + 1, 
+        ClientId: Math.floor(Math.random() * 10) + 1, 
         Quantity: Math.floor(Math.random() * 5) + 1, 
         OperationTypeId: Math.floor(Math.random() * 2) + 1 
     };
@@ -30,7 +30,7 @@ export default function () {
         'save is status 500': (r) => r.status === 500,
     });
 
-    const clientId = Math.floor(Math.random() * 5) + 1;
+    const clientId = Math.floor(Math.random() * 10) + 1;
     const responseGet = http.get(`http://localhost:8080/Product/GetClientProductList?clientId=${clientId}` , {
         tags: { type: 'GetClientProductList' },
     });
