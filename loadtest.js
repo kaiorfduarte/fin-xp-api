@@ -4,8 +4,8 @@ import http from 'k6/http';
 const only422Callback = http.expectedStatuses(422);
 
 export const options = {
-    vus: 1,
-    duration: '60s',
+    vus: 5,
+    duration: '120s',
     thresholds: {
         'http_req_duration{type:NegotiationSave}': ['p(99)<100'], 
         'http_req_duration{type:GetClientProductList}': ['p(99)<100'],
