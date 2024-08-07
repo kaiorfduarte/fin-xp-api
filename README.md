@@ -1,4 +1,4 @@
-<h1>Como executar o projeto:<h1>
+<h1>Como executar o projeto:</h1>
 
 **Pre-requisitos**
  - Ter o docker na maquina;
@@ -47,7 +47,7 @@ k6 run loadtest.js
 - No topo do resultado, sera tambem informado a quantidade de request por status.
 
 
-<h1>Como utilizar o projeto:<h1>
+<h1>Como utilizar o projeto:</h1>
 
 **Compra ou venda**
 Para compra ou vendar um produto, deve se fazer um post no endpoint: **http://localhost:8080/Negotiation/Save**
