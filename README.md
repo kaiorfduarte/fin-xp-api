@@ -41,7 +41,7 @@ Ainda no diretorio raiz do projeto, executar o comando:
 ```
 k6 run loadtest.js
 ```
-- O script esta configurado para executar 5 vus com duracao de 120 segundos.
+- O script esta configurado para executar 5 vus com duracao de 60 segundos.
 - Temos configurado as metricas NegotiationSave e GetClientProductList, onde NegotiationSave ele vai salvar as negociacoes de compra/venda e o outro vai buscar a quantidade de produtos que o cliente possui.
 - Foi criado 10 Clientes e 10 Produtos, nesse script vai ser randomizado os dois.
 - No topo do resultado, sera tambem informado a quantidade de request por status.
